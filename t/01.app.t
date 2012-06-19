@@ -63,21 +63,8 @@ is($obj->calculate(9),    "IX", "9   => IX");
 is($obj->calculate(90),   "XC", "90  => XC");
 is($obj->calculate(900),  "CM", "900 => CM");
 
-
 is($obj->calculate(3),    "III",  "3    => III");
 is($obj->calculate(6),    "VI",   "6    => VI");
 is($obj->calculate(8),    "VIII", "8    => VIII");
 is($obj->calculate(2000), "MM",   "2000 => MM");
 
-# is($obj->convert(1),    "I", "1    => I");
-# is($obj->convert(5),    "V", "5    => V");
-# is($obj->convert(10),   "X", "10   => X");
-# is($obj->convert(50),   "L", "50   => L");
-# is($obj->convert(100),  "C", "100  => C");
-# is($obj->convert(500),  "D", "500  => D");
-# is($obj->convert(1000), "M", "1000 => M");
-
-# is($obj->convert(2),    "II", "2    => II");
-# is($obj->convert(20),   "XX", "20   => XX");
-# is($obj->convert(200),  "CC", "200  => CC");
-# is($obj->convert(2000), "MM", "2000 => MM");
