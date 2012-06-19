@@ -14,10 +14,10 @@ sub new {
 sub convert {
 	my ($self, $number) = @_;
 	my $result		    = "";	
-	my @digits          = &split_digit($number);
+	my @digits          = $self->split_digit($number);
 
 	foreach $digit (@digits) {
-		$result = &calculate($digit);
+		$result .= $self->calculate($digit);
 	}
 
 	return $result;
@@ -38,7 +38,7 @@ sub split_digit {
 
 sub calculate {
 	my ($self, $input) = @_;
-	
+
 	if ($input >= 1000) { 
 		return "M" x ($input/1000);
 	}
@@ -62,7 +62,8 @@ sub calculate {
 	elsif($input == 5) 	{ return "V"; }
 	elsif($input == 4) 	{ return "IV"; }
 	elsif($input > 5) 	{ return "V" . ("I" x ($input - 5)); }
-		return "I" x ($input);
+
+	return "I" x ($input);
 }
 
 1;

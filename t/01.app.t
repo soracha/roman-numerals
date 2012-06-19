@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-use diagnostics;
+#use diagnostics;
 use List::Compare;
 use Test::More qw(no_plan);
 
