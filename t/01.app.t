@@ -80,3 +80,10 @@ is($obj->convert(2),    "II", "2    => II");
 is($obj->convert(20),   "XX", "20   => XX");
 is($obj->convert(200),  "CC", "200  => CC");
 is($obj->convert(2000), "MM", "2000 => MM");
+
+is($obj->convert(31), "XXXI", "31  => XXXI");
+is($obj->convert(369), "CCCLXIX", "369  => CCCLXIX");
+is($obj->convert(369), "CCCLXIX", "679  => DCLXXIX");
+is($obj->convert(448), "CDXLVIII", "448  => CDXLVIII");
+is($obj->convert(1999), "MCMXCIX", "1999  => MCMXCIX");
+

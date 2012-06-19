@@ -46,7 +46,7 @@ sub calculate {
 		if ($input == 900) 	  	{ return "CM"; }
 		elsif ($input == 500)	{ return "D"; }
 		elsif ($input == 400) 	{ return "CD"; }
-		elsif ($input > 500) 	{ return "D" . ( "C" x ($input - 500)/100); }
+		elsif ($input > 500) 	{ return "D" . ( "C" x (($input - 500)/100)); }
 		return "C" x ($input/100);
 	}
 
@@ -54,7 +54,7 @@ sub calculate {
 		if($input == 90) 	{ return "XC"; }
 		elsif($input == 50) { return "L"; }
 		elsif($input == 40) { return "XL"; }
-		elsif($input > 50) 	{ return "L" . ("X" x ($input - 50)/10); }
+		elsif($input > 50) 	{ return "L" . ("X" x (($input - 50)/10)); }
 		return "X" x ($input/10);
 	}
 
