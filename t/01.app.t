@@ -58,11 +58,16 @@ ok(
 	"split 9999"
 );
 
-# is($obj->calculate(4),    9,    "9    => 9");
-# is($obj->calculate(9),    9,    "9    => 9");
-# is($obj->calculate(99),   99,   "99   => 99");
-# is($obj->calculate(999),  999,  "999  => 999");
-# is($obj->calculate(9999), 9999, "9999 => 9999");
+is($obj->calculate(4),    "IV", "4   => IV");
+is($obj->calculate(9),    "IX", "9   => IX");
+is($obj->calculate(90),   "XC", "90  => XC");
+is($obj->calculate(900),  "CM", "900 => CM");
+
+
+is($obj->calculate(3),    "III",  "3    => III");
+is($obj->calculate(6),    "VI",   "6    => VI");
+is($obj->calculate(8),    "VIII", "8    => VIII");
+is($obj->calculate(2000), "MM",   "2000 => MM");
 
 # is($obj->convert(1),    "I", "1    => I");
 # is($obj->convert(5),    "V", "5    => V");
