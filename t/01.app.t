@@ -82,8 +82,8 @@ is($obj->convert(200),  "CC", "200  => CC");
 is($obj->convert(2000), "MM", "2000 => MM");
 
 is($obj->convert(3), "III", "3  => III");
-is($obj->convert(6), "VI",  "3  => III");
-is($obj->convert(9), "IX",  "3  => III");
+is($obj->convert(6), "VI",  "6  => VI");
+is($obj->convert(9), "IX",  "9  => IX");
 
 is($obj->convert(11), "XI",  "11  => XI");
 is($obj->convert(14), "XIV", "14  => XIV");
